@@ -1,3 +1,4 @@
+import Topbar from '@/components/Topbar/Topbar';
 import './globals.scss';
 import type { Metadata } from 'next';
 
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <Topbar />
+        {children}
+      </body>
     </html>
   );
 }

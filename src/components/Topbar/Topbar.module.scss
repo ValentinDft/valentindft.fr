@@ -1,0 +1,36 @@
+.container {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    width: 500px;
+    overflow: hidden;
+  }
+
+  .jobs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+    font-family: var(--font-ubuntu);
+    .bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
