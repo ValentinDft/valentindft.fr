@@ -1,0 +1,29 @@
+.container {
+  height: calc(100vh - 133px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    color: var(--text-color-with-opacity);
+    font-size: 50px;
+  }
+  p {
+    margin-top: 40px;
+    color: var(--text-color-with-opacity);
+  }
+
+  &-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100px;
+    }
+  }
+}

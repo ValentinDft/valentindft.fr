@@ -10,7 +10,7 @@ const Topbar = () => {
   return (
     <div className={styles['container']}>
       <div className={styles['title']}>
-        <h1>@valentinduffet{slug}</h1>
+        <h1>@valentindft{slug}</h1>
         <div className={styles['jobs']}>
           {searchWork ? (
             <>
