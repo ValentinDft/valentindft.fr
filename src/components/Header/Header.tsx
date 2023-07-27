@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className={styles['container']}>
       <div>
-        <span>Hello, my name is </span>
+        <span className='title'>Hello, my name is </span>
         <h1>VALENTIN DUFFET.</h1>
         <h2>I'm a Front-end developer from Montpellier, France</h2>
         <p>
