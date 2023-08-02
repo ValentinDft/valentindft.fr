@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 18%;
+
+  .skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+  }
+}

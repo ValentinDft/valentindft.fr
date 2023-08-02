@@ -1,8 +1,7 @@
 .description {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 200px;
+  justify-content: space-between;
   width: 100%;
 
   img {
@@ -20,5 +19,5 @@
   width: 45%;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  margin-top: 20px;
 }

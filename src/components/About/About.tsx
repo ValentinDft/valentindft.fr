@@ -1,14 +1,15 @@
 'use client';
 
 import styles from './About.module.scss';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { TbBrandGithubFilled } from 'react-icons/tb';
 import { IconContext } from 'react-icons';
 import Link from 'next/link';
 
 const About = () => {
   return (
     <div className={styles['container']}>
-      <h1 className='title-section'>About Me</h1>
+      <h1 className='title-section-left'>About Me</h1>
       <div className={styles['description']}>
         <p>
           Young developer, passionate about web technologies. I learned to code
@@ -34,16 +35,16 @@ const About = () => {
         </p>
         <img src='./assets/img/profile-pic.png' alt='image of me' />
       </div>
-      <IconContext.Provider value={{ className: 'react-icons' }}>
+      <IconContext.Provider value={{ className: 'react-icons-link' }}>
         <div className={styles['icons']}>
           <Link
             href='https://www.linkedin.com/in/valentin-duffet/'
             target='about-blank'
           >
-            <FaLinkedin />
+            <FaLinkedinIn />
           </Link>
           <Link href='https://github.com/ValentinDft' target='about-blank'>
-            <FaGithub />
+            <TbBrandGithubFilled />
           </Link>
         </div>
       </IconContext.Provider>

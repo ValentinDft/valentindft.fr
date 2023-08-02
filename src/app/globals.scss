@@ -48,15 +48,28 @@ h1 {
     line-height: 2;
     border-bottom: 3px solid;
     width: 30%;
+
+    &-left {
+      @extend .title-section;
+      text-align: left;
+    }
+    &-right {
+      @extend .title-section;
+      text-align: right;
+    }
   }
 }
 
 .react-icons {
   font-size: 30px;
-  transition: all 0.5s ease;
 
-  &:hover {
-    color: var(--text-color-secondary);
-    transform: translateY(-5px);
+  &-link {
+    @extend .react-icons;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: var(--text-color-secondary);
+      transform: translateY(-5px);
+    }
   }
 }
