@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import styles from './About.module.scss';
@@ -5,6 +6,8 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { TbBrandGithubFilled } from 'react-icons/tb';
 import { IconContext } from 'react-icons';
 import Link from 'next/link';
+import Image from 'next/image';
+import profileImg from '../../../public/assets/img/profile-pic.png';
 
 const About = () => {
   return (
@@ -33,13 +36,17 @@ const About = () => {
             Openclassrooms.
           </span>
         </p>
-        <img src='./assets/img/profile-pic.png' alt='image of me' />
+        <div className={styles['container-img']}>
+          <Image src={profileImg} alt='image of me' width={250} height={250} />
+        </div>
       </div>
+
       <IconContext.Provider value={{ className: 'react-icons-link' }}>
         <div className={styles['icons']}>
           <Link
             href='https://www.linkedin.com/in/valentin-duffet/'
             target='about-blank'
+            className='oui'
           >
             <FaLinkedinIn />
           </Link>

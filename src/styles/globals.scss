@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda&family=Exo&family=Share&family=Ubuntu&display=swap');
+@import './keyFrames.scss';
 
 :root {
   --border-radius: 10px;
@@ -9,17 +10,20 @@
   --background-color-with-opacity: #14303fdc;
   --text-color: rgb(218, 217, 213);
   --text-color-with-opacity: #dcd8d0a7;
-  --text-color-secondary: #ffd275;
+  --color-primary: #ffd275;
+  --color-secondary: #75cac3;
 }
 
 * {
   padding: 0;
   margin: 0;
+  // cursor: none;
 }
 
 a {
   color: var(--text-color);
   text-decoration: none;
+  cursor: pointer !important;
 }
 
 body {
@@ -41,7 +45,7 @@ h1 {
 }
 
 .title {
-  color: var(--text-color-secondary);
+  color: var(--color-primary);
 
   &-section {
     @extend .title;
@@ -66,10 +70,16 @@ h1 {
   &-link {
     @extend .react-icons;
     transition: all 0.5s ease;
+    cursor: pointer;
 
     &:hover {
-      color: var(--text-color-secondary);
+      color: var(--color-primary);
       transform: translateY(-5px);
     }
   }
+}
+
+.animated-text-word {
+  opacity: 0;
+  animation: translateXAnimation 0.8s ease-in-out forwards;
 }

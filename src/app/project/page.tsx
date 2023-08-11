@@ -1,7 +1,8 @@
+import { NextPage } from 'next';
 import styles from './page.module.scss';
 
-const page = () => {
+const Project: NextPage = () => {
   return <div className={styles['container']}>Project</div>;
 };
 
-export default page;
+export default Project;

@@ -2,8 +2,9 @@ import About from '@/components/About/About';
 import styles from './page.module.scss';
 import Header from '@/components/Header/Header';
 import Skills from '@/components/Skills/Skills';
+import { NextPage } from 'next';
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <main>
       <Header />
@@ -11,4 +12,6 @@ export default function Home() {
       <Skills />
     </main>
   );
-}
+};
+
+export default Home;

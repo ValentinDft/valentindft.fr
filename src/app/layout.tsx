@@ -1,6 +1,7 @@
 import Topbar from '@/components/Topbar/Topbar';
-import './globals.scss';
+import '../styles/globals.scss';
 import type { Metadata } from 'next';
+import Cursor from '@/components/Cursor/Cursor';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Valentin Duffet',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
+        {/* <Cursor /> */}
         <Topbar />
         {children}
       </body>
