@@ -12,12 +12,14 @@ import {
 } from 'react-icons/tb';
 import { LiaJira } from 'react-icons/lia';
 import { IconContext } from 'react-icons';
-import Tooltip from '../Tooltip/Tooltip';
+import Tooltip from '../../Tooltip/Tooltip';
 
 const Skills = () => {
   return (
     <div className={styles['container']}>
-      <h1 className='title-section-right'>Skills</h1>
+      <h1 className='title-section-right'>
+        Skills<span className='dot-title'></span>
+      </h1>
       <IconContext.Provider value={{ className: 'react-icons' }}>
         <div className={styles['skills']}>
           <Tooltip icon={<FaHtml5 />} content='HTML' />

@@ -50,8 +50,8 @@ h1 {
   &-section {
     @extend .title;
     line-height: 2;
-    border-bottom: 3px solid;
-    width: 30%;
+    color: var(--text-color-with-opacity);
+    font-size: 56px;
 
     &-left {
       @extend .title-section;
@@ -82,4 +82,13 @@ h1 {
 .animated-text-word {
   opacity: 0;
   animation: translateXAnimation 0.8s ease-in-out forwards;
+}
+
+.dot-title {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--color-primary);
+  margin-left: 5px;
 }

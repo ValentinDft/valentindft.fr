@@ -7,12 +7,14 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { IconContext } from 'react-icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import profileImg from '../../../public/assets/img/profile-pic.png';
+import profileImg from '../../../../public/assets/img/profile-pic.png';
 
 const About = () => {
   return (
     <div className={styles['container']}>
-      <h1 className='title-section-left'>About Me</h1>
+      <h1 className='title-section-left'>
+        About Me<span className='dot-title'></span>
+      </h1>
       <div className={styles['description']}>
         <p>
           Young developer, passionate about web technologies. I learned to code
