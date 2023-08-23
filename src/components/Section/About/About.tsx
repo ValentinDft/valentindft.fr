@@ -12,9 +12,9 @@ import profileImg from '../../../../public/assets/img/profile-pic.png';
 const About = () => {
   return (
     <div className={styles['container']}>
-      <h1 className='title-section-left'>
+      <h2 className='title-section-left'>
         About Me<span className='dot-title'></span>
-      </h1>
+      </h2>
       <div className={styles['description']}>
         <p>
           Young developer, passionate about web technologies. I learned to code

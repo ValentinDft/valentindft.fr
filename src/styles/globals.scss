@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Coda&family=Exo&family=Share&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Exo&family=Share&family=Ubuntu&display=swap');
 @import './keyFrames.scss';
 
 :root {
@@ -52,6 +52,8 @@ h1 {
     line-height: 2;
     color: var(--text-color-with-opacity);
     font-size: 56px;
+    font-family: var(--font-coda);
+    margin-bottom: 20px;
 
     &-left {
       @extend .title-section;
@@ -90,5 +92,5 @@ h1 {
   height: 15px;
   border-radius: 100%;
   background-color: var(--color-primary);
-  margin-left: 5px;
+  margin-left: 10px;
 }

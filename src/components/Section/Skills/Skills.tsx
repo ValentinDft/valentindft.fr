@@ -17,9 +17,9 @@ import Tooltip from '../../Tooltip/Tooltip';
 const Skills = () => {
   return (
     <div className={styles['container']}>
-      <h1 className='title-section-right'>
+      <h2 className='title-section-right'>
         Skills<span className='dot-title'></span>
-      </h1>
+      </h2>
       <IconContext.Provider value={{ className: 'react-icons' }}>
         <div className={styles['skills']}>
           <Tooltip icon={<FaHtml5 />} content='HTML' />

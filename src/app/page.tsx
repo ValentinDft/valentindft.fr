@@ -3,6 +3,7 @@ import styles from './page.module.scss';
 import Header from '@/components/Header/Header';
 import Skills from '@/components/Section/Skills/Skills';
 import { Metadata, NextPage } from 'next';
+import Experience from '@/components/Section/Experience/Experience';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Valentin Duffet',
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <About />
       <Skills />
+      <Experience />
     </main>
   );
 };

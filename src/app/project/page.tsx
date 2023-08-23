@@ -1,6 +1,5 @@
 import { Metadata, NextPage } from 'next';
 import styles from './page.module.scss';
-import Reveal from '@/utils/Reveal/Reveal';
 import PageTransition from '@/utils/PageTransition/PageTransition';
 
 export const metadata: Metadata = {

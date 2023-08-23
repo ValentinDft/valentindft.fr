@@ -1,5 +1,6 @@
 import { ReactNode, useState } from 'react';
 import styles from './Tooltip.module.scss';
+import { Variants, motion } from 'framer-motion';
 
 type TooltipProps = {
   icon: ReactNode;
@@ -9,6 +10,15 @@ type TooltipProps = {
 const Tooltip = ({ icon, content }: TooltipProps) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
+  const animationVariant: Variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
+
   return (
     <div
       className={styles['tooltip-container']}
@@ -16,7 +26,17 @@ const Tooltip = ({ icon, content }: TooltipProps) => {
       onMouseLeave={() => setShowTooltip(false)}
     >
       {icon}
-      {showTooltip && <div className={styles['tooltip']}>{content}</div>}
+      {showTooltip && (
+        <motion.div
+          className={styles['tooltip']}
+          variants={animationVariant}
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          {content}
+        </motion.div>
+      )}
     </div>
   );
 };
