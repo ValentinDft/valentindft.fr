@@ -11,7 +11,7 @@ import profileImg from '../../../../public/assets/img/profile-pic.png';
 
 const About = () => {
   return (
-    <div className={styles['container']}>
+    <section className={styles['container']}>
       <h2 className='title-section-left'>
         About Me<span className='dot-title'></span>
       </h2>
@@ -57,7 +57,7 @@ const About = () => {
           </Link>
         </div>
       </IconContext.Provider>
-    </div>
+    </section>
   );
 };
 

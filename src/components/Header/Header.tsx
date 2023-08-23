@@ -6,7 +6,7 @@ import Reveal from '@/utils/Reveal/Reveal';
 
 const Header = () => {
   return (
-    <div className={styles['container']}>
+    <section className={styles['container']}>
       <div>
         <span className='title'>Hello, my name is </span>
         <h1 style={{ position: 'relative' }} id='title-name'>
@@ -34,7 +34,7 @@ const Header = () => {
         />
         <Reveal delay={0.8} />
       </div>
-    </div>
+    </section>
   );
 };
 

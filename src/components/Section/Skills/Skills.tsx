@@ -16,7 +16,7 @@ import Tooltip from '../../Tooltip/Tooltip';
 
 const Skills = () => {
   return (
-    <div className={styles['container']}>
+    <section className={styles['container']}>
       <h2 className='title-section-right'>
         Skills<span className='dot-title'></span>
       </h2>
@@ -36,7 +36,7 @@ const Skills = () => {
           <Tooltip icon={<TbBrandFigma />} content='Figma' />
         </div>
       </IconContext.Provider>
-    </div>
+    </section>
   );
 };
 

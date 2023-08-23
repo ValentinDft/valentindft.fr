@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Portfolio | Valentin Duffet | Project',
 };
 
-const Project: NextPage = () => {
+const Project: NextPage = (props) => {
   return (
     <div className={styles['container']}>
       Project <PageTransition />

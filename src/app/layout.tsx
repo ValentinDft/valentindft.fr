@@ -1,6 +1,7 @@
 import Topbar from '@/components/Topbar/Topbar';
 import '../styles/globals.scss';
 import Cursor from '@/utils/Cursor/Cursor';
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 
 export default function RootLayout({
   children,
@@ -11,6 +12,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         {/* <Cursor /> */}
+        <ProgressBar />
         <Topbar />
         {children}
       </body>

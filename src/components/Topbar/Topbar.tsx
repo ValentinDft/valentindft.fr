@@ -34,7 +34,7 @@ const Topbar = () => {
 
       <nav>
         <Link href='/'>Home</Link>
-        <Link href='/project'>Project</Link>
+        <Link href='/projects'>Projects</Link>
       </nav>
     </div>
   );

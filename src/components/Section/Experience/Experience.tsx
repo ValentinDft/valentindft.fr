@@ -36,7 +36,7 @@ const Experience = () => {
     },
   ];
   return (
-    <div className={styles['container']}>
+    <section className={styles['container']}>
       <h2 className='title-section-left'>
         Experience<span className='dot-title'></span>
       </h2>
@@ -66,7 +66,7 @@ const Experience = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
