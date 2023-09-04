@@ -3,6 +3,7 @@ import Header from '@/components/Header/Header';
 import Skills from '@/components/Section/Skills/Skills';
 import { Metadata, NextPage } from 'next';
 import Experience from '@/components/Section/Experience/Experience';
+import Education from '@/components/Section/Education/Education';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Valentin Duffet',
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <About />
       <Skills />
       <Experience />
+      <Education />
     </main>
   );
 };
