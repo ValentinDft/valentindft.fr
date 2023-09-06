@@ -1,0 +1,43 @@
+.card {
+  width: 100%;
+  padding: 0px 20px 20px 0px;
+  border-bottom: 1px solid var(--text-color-with-opacity);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: default;
+
+  &:not(:first-child) {
+    padding-top: 20px;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .company {
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .title {
+      font-weight: 400;
+      font-size: 20px;
+      color: var(--color-primary);
+    }
+  }
+
+  &-skills {
+    margin-top: 15px;
+    height: 20px;
+  }
+
+  &-list {
+    width: 85%;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+}

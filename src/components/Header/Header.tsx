@@ -2,7 +2,7 @@
 import styles from './Header.module.scss';
 import Image from 'next/image';
 import scrollImg from '../../../public/assets/gif/animation-scroll.gif';
-import Reveal from '@/utils/Reveal/Reveal';
+import Reveal from '@/utils/animation/Reveal/Reveal';
 
 const Header = () => {
   return (

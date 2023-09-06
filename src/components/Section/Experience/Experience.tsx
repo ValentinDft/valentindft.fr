@@ -1,5 +1,6 @@
-import Pill from '@/components/Pill/Pill';
+import CardExperience from '@/components/CardExperience/CardExperience';
 import styles from './Experience.module.scss';
+import FadeInIpAnimation from '@/utils/animation/FadeInUp/FadeInUp';
 
 type typeDataExperience = Array<{
   id: number;
@@ -63,37 +64,18 @@ const Experience = () => {
   ];
 
   return (
-    <section className={styles['container']}>
-      <h2 className='title-section-left'>
-        Experience<span className='dot-title'></span>
-      </h2>
-      <div>
-        {dataExperience.map((element) => {
-          return (
-            <div key={element.id} className={styles['card']}>
-              <div className={styles['card-section']}>
-                <h3 className={styles['company']}>{element.company}</h3>
-                <span>{element.date}</span>
-              </div>
-              <div className={styles['card-section']}>
-                <h3 className={styles['title']}>{element.title}</h3>
-                <span>{element.location}</span>
-              </div>
-              <ul className={styles['card-list']}>
-                {element.description?.map((desc, i) => {
-                  return <li key={i}>{desc}</li>;
-                })}
-              </ul>
-              <div className={styles['card-skills']}>
-                {element.skills?.map((skill, i) => {
-                  return <Pill key={i} skill={skill} />;
-                })}
-              </div>
-            </div>
-          );
-        })}
+    <FadeInIpAnimation>
+      <div className={styles['container']}>
+        <h2 className='title-section-left'>
+          Experience<span className='dot-title'></span>
+        </h2>
+        <div>
+          {dataExperience.map((element, i) => {
+            return <CardExperience data={element} key={i} />;
+          })}
+        </div>
       </div>
-    </section>
+    </FadeInIpAnimation>
   );
 };
 
