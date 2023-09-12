@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from './Header.module.scss';
 import Image from 'next/image';
-import scrollImg from '../../../public/assets/gif/animation-scroll.gif';
 import Reveal from '@/utils/animation/Reveal/Reveal';
 
 const Header = () => {
@@ -27,7 +26,7 @@ const Header = () => {
       </div>
       <div className={styles['container-img']} style={{ position: 'relative' }}>
         <Image
-          src={scrollImg}
+          src={'/assets/gif/animation-scroll.gif'}
           alt='logo scroll animation'
           width={100}
           height={100}

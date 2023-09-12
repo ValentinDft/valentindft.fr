@@ -102,3 +102,10 @@ h2 {
   background-color: var(--color-primary);
   margin-left: 10px;
 }
+
+.title-project-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color);
+  opacity: 0.5;
+}

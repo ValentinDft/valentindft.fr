@@ -7,7 +7,6 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { IconContext } from 'react-icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import profileImg from '../../../../public/assets/img/profile-pic.png';
 import FadeInIpAnimation from '@/utils/animation/FadeInUp/FadeInUp';
 import { useRef } from 'react';
 
@@ -45,7 +44,7 @@ const About = () => {
           </p>
           <div className={styles['container-img']}>
             <Image
-              src={profileImg}
+              src={'/assets/img/profile-pic.png'}
               alt='image of me'
               width={250}
               height={250}

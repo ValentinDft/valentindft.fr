@@ -76,9 +76,9 @@ const Education = () => {
         </h2>
 
         <div>
-          {dataEducation.map((element, i) => {
-            return <CardExperience data={element} key={i} />;
-          })}
+          {dataEducation.map((element, i) => (
+            <CardExperience data={element} key={i} />
+          ))}
         </div>
       </div>
     </FadeInIpAnimation>

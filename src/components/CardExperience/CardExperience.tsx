@@ -3,7 +3,16 @@ import styles from './CardExperience.module.scss';
 import Pill from '@/components/Pill/Pill';
 
 type propsCardExperience = {
-  data: any;
+  data: {
+    id: number;
+    company?: string;
+    school?: string;
+    date: string;
+    title: string;
+    location: string;
+    description: string[];
+    skills: string[];
+  };
 };
 
 const CardExperience = ({ data }: propsCardExperience) => {
@@ -19,9 +28,9 @@ const CardExperience = ({ data }: propsCardExperience) => {
         <span>{data.location}</span>
       </div>
       <ul className={styles['card-list']}>
-        {data.description?.map((desc: string, i: number) => {
-          return <li key={i}>{desc}</li>;
-        })}
+        {data.description?.map((desc: string, i: number) => (
+          <li key={i}>{desc}</li>
+        ))}
       </ul>
       <div className={styles['card-skills']}>
         {data.skills?.map((skill: string, i: number) => {

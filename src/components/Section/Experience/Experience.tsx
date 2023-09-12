@@ -70,9 +70,9 @@ const Experience = () => {
           Experience<span className='dot-title'></span>
         </h2>
         <div>
-          {dataExperience.map((element, i) => {
-            return <CardExperience data={element} key={i} />;
-          })}
+          {dataExperience.map((element, i) => (
+            <CardExperience data={element} key={i} />
+          ))}
         </div>
       </div>
     </FadeInIpAnimation>
