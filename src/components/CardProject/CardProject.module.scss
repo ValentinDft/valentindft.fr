@@ -32,6 +32,11 @@
       align-items: center;
       gap: 10px;
 
+      h3 {
+        flex-shrink: 0;
+        max-width: calc(100% - 150px);
+      }
+
       &-icons {
         display: flex;
         align-items: center;

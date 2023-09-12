@@ -32,7 +32,7 @@ const CardProject = ({ data }: propsCardProject) => {
       </div>
       <div className={styles['card-body']}>
         <div className={styles['card-body-title']}>
-          <h2>{data.title}</h2>
+          <h3>{data.title}</h3>
           <div className='title-project-line'></div>
           <IconContext.Provider value={{ className: 'react-icons-link' }}>
             <div className={styles['card-body-title-icons']}>
