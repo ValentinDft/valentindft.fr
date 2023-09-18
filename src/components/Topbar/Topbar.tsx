@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 const Topbar = () => {
   const slug = usePathname();
   const searchWork = true;
-
   return (
     <div className={styles['container']}>
       <div className={styles['title']}>
@@ -33,9 +32,18 @@ const Topbar = () => {
       </div>
 
       <nav>
-        <Link href='/'>Home</Link>
-        <Link href='/projects'>Projects</Link>
-        <Link href='/projects'>Timelife</Link>
+        <Link href='/' className={slug === '/' ? styles['active'] : ''}>
+          Home
+        </Link>
+        <Link
+          href='/projects'
+          className={slug === '/projects' ? styles['active'] : ''}
+        >
+          Projects
+        </Link>
+        <Link href='#' className={styles['disabled']}>
+          TimeLife
+        </Link>
       </nav>
     </div>
   );

@@ -109,3 +109,19 @@ h2 {
   background-color: var(--text-color);
   opacity: 0.5;
 }
+
+// margin with opacity for mobile
+@media screen and (max-width: 500px) {
+  html {
+    margin: 8px;
+  }
+  body {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .title-section {
+    font-size: 40px;
+  }
+}

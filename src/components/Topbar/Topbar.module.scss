@@ -1,13 +1,14 @@
 @import '/src/styles/keyFrames.scss';
 
 .container {
-  display: flex;
+  animation: opacityAnimation 1s ease-in-out 0s 1 normal forwards;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
   justify-content: space-between;
-  animation: opacityAnimation 1s ease-in-out 0s 1 normal forwards;
 
   .title {
-    width: 500px;
+    width: 100%;
     overflow: hidden;
     h1 {
       font-weight: 400;
@@ -29,6 +30,7 @@
 
   nav {
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
 
     a {
@@ -46,10 +48,26 @@
         transform-origin: bottom right;
         transition: transform 0.3s ease-out;
       }
-      &:hover::after {
+      &:hover:not(.active)::after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+    }
+
+    .active {
+      border-bottom: 2px solid var(--color-primary);
+    }
+    .disabled {
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    grid-template-columns: repeat(1, 100%);
+    nav {
+      margin-top: 20px;
     }
   }
 }

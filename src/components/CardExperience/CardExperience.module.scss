@@ -27,17 +27,44 @@
       font-weight: 400;
       font-size: 20px;
       color: var(--color-primary);
+      max-width: 70%;
     }
   }
 
   &-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 9rem);
+    align-items: center;
+    text-align: center;
+    grid-gap: 10px;
     margin-top: 15px;
-    height: 20px;
   }
 
   &-list {
     width: 85%;
     padding-left: 15px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .card {
+    .company {
+      font-size: 20px !important;
+    }
+    .title {
+      font-size: 16px !important;
+    }
+    &-section {
+      font-size: 14px;
+    }
+    &-skills {
+      grid-template-columns: repeat(auto-fit, 6rem);
+      justify-content: center;
+    }
+    &-list {
+      width: 100%;
+      font-size: 14px;
+    }
   }
 }

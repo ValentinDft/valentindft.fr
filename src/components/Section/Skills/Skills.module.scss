@@ -1,11 +1,20 @@
 .container {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
   margin-top: 18%;
 
   .skills {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30px);
+    grid-gap: 10px;
+    row-gap: 30px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    margin-top: 50%;
   }
 }
