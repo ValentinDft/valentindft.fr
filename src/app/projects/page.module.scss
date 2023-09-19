@@ -1,6 +1,23 @@
 .container {
-  margin-top: 5%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
-  gap: 50px;
+  margin: 10% 0;
+
+  &-list-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-between;
+    grid-row-gap: 50px;
+  }
+
+  &-footer {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+
+    a {
+      transition: color 1s ease;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
 }

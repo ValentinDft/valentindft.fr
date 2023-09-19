@@ -13,7 +13,7 @@ type propsCardProject = {
     image: string;
     title: string;
     githubLink: string;
-    externalLink: string;
+    externalLink?: string;
     skills: string[];
     description: string;
   };
@@ -39,9 +39,11 @@ const CardProject = ({ data }: propsCardProject) => {
               <Link href={data.githubLink} target='about-blank'>
                 <TbBrandGithubFilled />
               </Link>
-              <Link href={data.externalLink} target='about-blank'>
-                <HiOutlineExternalLink />
-              </Link>
+              {data?.externalLink && (
+                <Link href={data.externalLink} target='about-blank'>
+                  <HiOutlineExternalLink />
+                </Link>
+              )}
             </div>
           </IconContext.Provider>
         </div>

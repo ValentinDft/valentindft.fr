@@ -10,6 +10,7 @@ type propsCardExperience = {
     date: string;
     title: string;
     location: string;
+    level?: string;
     description: string[];
     skills: string[];
   };
@@ -24,7 +25,9 @@ const CardExperience = ({ data }: propsCardExperience) => {
         <span>{data.date}</span>
       </div>
       <div className={styles['card-section']}>
-        <h3 className={styles['title']}>{data.title}</h3>
+        <h3 className={styles['title']}>
+          {data.title} {data?.level && `- ${data?.level}`}
+        </h3>
         <span>{data.location}</span>
       </div>
       <ul className={styles['card-list']}>
