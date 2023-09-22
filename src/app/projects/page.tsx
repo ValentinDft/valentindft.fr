@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { TbBrandGithubFilled } from 'react-icons/tb';
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Valentin Duffet | Project',
+  title: 'Valentin Duffet | Project',
 };
 
 const Project: NextPage = () => {
