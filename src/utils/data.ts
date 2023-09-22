@@ -118,7 +118,7 @@ export const dataEducation: typeDataEducation = [
       'PHP',
       'SQL',
       'Android',
-      'infrastructure reseau',
+      'network infrastructure',
     ],
     level: 'BAC+2',
   },

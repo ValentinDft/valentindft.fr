@@ -12,7 +12,7 @@ import {
 } from 'react-icons/tb';
 import { LiaJira } from 'react-icons/lia';
 import { IconContext } from 'react-icons';
-import Tooltip from '../../Tooltip/Tooltip';
+import Tooltip from '../../../components/Tooltip/Tooltip';
 import FadeInIpAnimation from '@/utils/animation/FadeInUp/FadeInUp';
 
 const Skills = () => {

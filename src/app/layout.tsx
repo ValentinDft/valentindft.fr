@@ -1,7 +1,7 @@
-import Topbar from '@/components/Topbar/Topbar';
+import Topbar from '@/app/_componentsLayout/Topbar/Topbar';
 import '../styles/globals.scss';
 import Cursor from '@/utils/Cursor/Cursor';
-import ProgressBar from '@/components/ProgressBar/ProgressBar';
+import ProgressBar from '@/app/_componentsLayout/ProgressBar/ProgressBar';
 
 export default function RootLayout({
   children,

@@ -1,13 +1,13 @@
-import About from '@/components/Section/About/About';
-import Header from '@/components/Header/Header';
-import Skills from '@/components/Section/Skills/Skills';
+import About from '@/app/_components/About/About';
+import Header from '@/app/_components/Header/Header';
+import Skills from '@/app/_components/Skills/Skills';
 import { Metadata, NextPage } from 'next';
-import Experience from '@/components/Section/Experience/Experience';
-import Education from '@/components/Section/Education/Education';
+import Experience from '@/app/_components/Experience/Experience';
+import Education from '@/app/_components/Education/Education';
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Valentin Duffet',
-  description: 'Welcome to my new portfolio',
+  title: 'Valentin Duffet | Portfolio',
+  description: 'Welcome to my portfolio',
 };
 
 const Home: NextPage = () => {
