@@ -3,9 +3,7 @@ import styles from './page.module.scss';
 import PageTransition from '@/utils/animation/PageTransition/PageTransition';
 import CardProject from '@/app/projects/_components/CardProject/CardProject';
 import { dataProject } from '@/utils/data';
-import { IconContext } from 'react-icons';
 import Link from 'next/link';
-import { TbBrandGithubFilled } from 'react-icons/tb';
 
 export const metadata: Metadata = {
   title: 'Valentin Duffet | Project',
