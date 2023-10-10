@@ -132,6 +132,7 @@ type typeDataProject = Array<{
   externalLink?: string;
   skills: string[];
   description: string;
+  highlight: boolean;
 }>;
 
 export const dataProject: typeDataProject = [
@@ -144,6 +145,7 @@ export const dataProject: typeDataProject = [
     skills: ['NextJS', 'TypeScript', 'Sass', 'Framer Motion'],
     description:
       'This is my new Portfolio. Develop with NextJs and host with Vercel.',
+    highlight: false,
   },
   {
     id: 2,
@@ -154,6 +156,7 @@ export const dataProject: typeDataProject = [
     skills: ['ReactJS', 'JavaScript', 'Redux', 'ExpressJS', 'MovieDB API'],
     description:
       'Web App for collecting movies and series. Use of the MovieDB api to retrieve information on the most popular films and series currently available, and exploitation of the data received from the api.',
+    highlight: true,
   },
   {
     id: 3,
@@ -170,6 +173,7 @@ export const dataProject: typeDataProject = [
     ],
     description:
       'Web app for searching the weather in a city. Using the OpenWeatherMap api for weather data.',
+    highlight: true,
   },
   {
     id: 4,
@@ -178,6 +182,7 @@ export const dataProject: typeDataProject = [
     githubLink: 'https://github.com/ValentinDft/iss-app',
     skills: ['ReactJS', 'JavaScript', 'Redux', 'LeafletJS', 'IssPosition API'],
     description: 'Web app to view iss current position on earth.',
+    highlight: false,
   },
   {
     id: 5,
@@ -187,6 +192,7 @@ export const dataProject: typeDataProject = [
     skills: ['JavaScript', 'HTML/CSS'],
     description:
       'JavaScript platform for photographers to publish their photos - OpenClassrooms project.',
+    highlight: false,
   },
   {
     id: 6,
@@ -196,6 +202,7 @@ export const dataProject: typeDataProject = [
     externalLink: 'https://kasa-ashy-nu.vercel.app/',
     skills: ['ReactJS', 'JavaScript', 'React-router', 'Sass'],
     description: 'Web app for vacation rentals - OpenClassrooms project',
+    highlight: true,
   },
   {
     id: 7,
@@ -206,5 +213,6 @@ export const dataProject: typeDataProject = [
     skills: ['ReactJS', 'JavaScript', 'React-router', 'Sass', 'RechartJS'],
     description:
       'Analytics dashboard with React. Sport performance tracking with graphs  - OpenClassrooms project.',
+    highlight: false,
   },
 ];

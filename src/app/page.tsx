@@ -1,9 +1,10 @@
-import About from '@/app/_components/About/About';
-import Header from '@/app/_components/Header/Header';
+import About from '@/app/_components/Section/About/About';
+import Header from '@/app/_components/Section/Header/Header';
 import Skills from '@/app/_components/Skills/Skills';
 import { Metadata, NextPage } from 'next';
-import Experience from '@/app/_components/Experience/Experience';
-import Education from '@/app/_components/Education/Education';
+import Experience from '@/app/_components/Section/Experience/Experience';
+import Education from '@/app/_components/Section/Education/Education';
+import SomeProject from './_components/Section/Project/SomeProject';
 
 export const metadata: Metadata = {
   title: 'Valentin Duffet | Portfolio',
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Skills />
       <Experience />
       <Education />
+      <SomeProject />
     </main>
   );
 };
