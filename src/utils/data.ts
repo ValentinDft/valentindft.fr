@@ -1,5 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
+
 type typeDataExperience = Array<{
-  id: number;
+  id: string;
   company: string;
   date: string;
   location: string;
@@ -10,7 +12,7 @@ type typeDataExperience = Array<{
 
 export const dataExperience: typeDataExperience = [
   {
-    id: 1,
+    id: uuidv4(),
     company: 'Rakuten DX',
     date: 'Feb. 2022 - Dec. 2023',
     location: 'Montpellier, France',
@@ -32,7 +34,7 @@ export const dataExperience: typeDataExperience = [
     ],
   },
   {
-    id: 2,
+    id: uuidv4(),
     company: 'Butterfly&Co',
     date: 'Apr. 2021 - Jul. 2021',
     location: 'Full-remote',
@@ -45,7 +47,7 @@ export const dataExperience: typeDataExperience = [
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     company: 'La Capsule Academy',
     date: 'Jan. 2021 - Feb. 2021',
     location: 'Lyon, France',
@@ -59,7 +61,7 @@ export const dataExperience: typeDataExperience = [
 ];
 
 type typeDataEducation = Array<{
-  id: number;
+  id: string;
   school: string;
   date: string;
   location: string;
@@ -71,7 +73,7 @@ type typeDataEducation = Array<{
 
 export const dataEducation: typeDataEducation = [
   {
-    id: 1,
+    id: uuidv4(),
     title: 'Application Developer - JavaScript React (RNCP level 6)',
     school: 'OpenClassrooms',
     location: 'Montpellier, France',
@@ -85,7 +87,7 @@ export const dataEducation: typeDataEducation = [
     skills: ['JavaScript', 'React.js', 'Redux', 'Jest'],
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: 'Formation Développeur Web Fullstack JavaScript',
     school: 'La Capsule Academy',
     location: 'Lyon, France',
@@ -103,7 +105,7 @@ export const dataEducation: typeDataEducation = [
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: 'BTS SNIR (Systèmes Numériques informatique et Réseaux)',
     school: 'Lycée Polyvalent Astier ',
     location: 'Aubenas, France',
@@ -125,7 +127,7 @@ export const dataEducation: typeDataEducation = [
 ];
 
 type typeDataProject = Array<{
-  id: number;
+  id: string;
   image: string;
   title: string;
   githubLink: string;
@@ -137,7 +139,18 @@ type typeDataProject = Array<{
 
 export const dataProject: typeDataProject = [
   {
-    id: 1,
+    id: uuidv4(),
+    image: 'screen-CV.png',
+    title: 'Colorz Vizualization',
+    githubLink: 'https://github.com/ValentinDft/colorz-vizualization',
+    externalLink: 'https://colorz-vizualization.vercel.app/',
+    skills: ['NextJS', 'TypeScript', 'Sass', 'Zustand'],
+    description:
+      'Colorz Vizialization gives you a preview of the colors you want to use in your web platform.',
+    highlight: true,
+  },
+  {
+    id: uuidv4(),
     image: 'screen-portfolio.png',
     title: 'Portfolio',
     githubLink: 'https://github.com/ValentinDft',
@@ -148,7 +161,7 @@ export const dataProject: typeDataProject = [
     highlight: false,
   },
   {
-    id: 2,
+    id: uuidv4(),
     image: 'screen-TMC.png',
     title: 'The Movies Collection',
     githubLink: 'https://github.com/ValentinDft/the_movies_collection',
@@ -159,7 +172,7 @@ export const dataProject: typeDataProject = [
     highlight: true,
   },
   {
-    id: 3,
+    id: uuidv4(),
     image: 'screen-WA.png',
     title: 'Weather App',
     githubLink: 'https://github.com/ValentinDft/Weather_App',
@@ -173,10 +186,10 @@ export const dataProject: typeDataProject = [
     ],
     description:
       'Web app for searching the weather in a city. Using the OpenWeatherMap api for weather data.',
-    highlight: true,
+    highlight: false,
   },
   {
-    id: 4,
+    id: uuidv4(),
     image: 'screen-ISS.png',
     title: 'ISS App',
     githubLink: 'https://github.com/ValentinDft/iss-app',
@@ -185,7 +198,7 @@ export const dataProject: typeDataProject = [
     highlight: false,
   },
   {
-    id: 5,
+    id: uuidv4(),
     image: 'screen-FE.png',
     title: 'Fisheye',
     githubLink: 'https://github.com/ValentinDft/Fisheye_OPC',
@@ -195,7 +208,7 @@ export const dataProject: typeDataProject = [
     highlight: false,
   },
   {
-    id: 6,
+    id: uuidv4(),
     image: 'screen-KASA.png',
     title: 'Kasa',
     githubLink: 'https://github.com/ValentinDft/Kasa-app_OPC',
@@ -205,7 +218,7 @@ export const dataProject: typeDataProject = [
     highlight: true,
   },
   {
-    id: 7,
+    id: uuidv4(),
     image: 'screen-SSee.png',
     title: 'SportSee',
     githubLink: 'https://github.com/ValentinDft/Sportsee-app_OPC',

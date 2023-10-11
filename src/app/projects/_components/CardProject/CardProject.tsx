@@ -1,7 +1,6 @@
 'use client';
 import styles from './CardProject.module.scss';
 import Image from 'next/image';
-import imgPortfolio from '../../../public/assets/img/screen-portfolio.png';
 import { IconContext } from 'react-icons';
 import Link from 'next/link';
 import { HiOutlineExternalLink } from 'react-icons/hi';
