@@ -8,7 +8,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 
 type propsCardProject = {
   data: {
-    id: number;
+    id: string;
     image: string;
     title: string;
     githubLink: string;
