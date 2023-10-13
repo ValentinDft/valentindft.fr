@@ -4,7 +4,7 @@ import Pill from '@/components/Pill/Pill';
 
 type propsCardExperience = {
   data: {
-    id: number;
+    id: string;
     company?: string;
     school?: string;
     date: string;
