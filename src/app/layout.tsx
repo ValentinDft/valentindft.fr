@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 import Cursor from '@/utils/Cursor/Cursor';
 import ProgressBar from '@/app/_components/ProgressBar/ProgressBar';
 import Footer from './_components/Section/Footer/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({
   children,
@@ -17,6 +18,7 @@ export default function RootLayout({
         <Topbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
