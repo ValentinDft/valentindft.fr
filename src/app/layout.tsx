@@ -1,7 +1,7 @@
-import Topbar from '@/app/_components/Topbar/Topbar';
+import Topbar from '@/components/Topbar/Topbar';
 import '../styles/globals.scss';
 import Cursor from '@/utils/Cursor/Cursor';
-import ProgressBar from '@/app/_components/ProgressBar/ProgressBar';
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 import Footer from './_components/Section/Footer/Footer';
 import { Analytics } from '@vercel/analytics/react';
 

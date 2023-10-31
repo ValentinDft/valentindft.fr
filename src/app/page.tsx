@@ -1,6 +1,6 @@
 import About from '@/app/_components/Section/About/About';
 import Header from '@/app/_components/Section/Header/Header';
-import Skills from '@/app/_components/Skills/Skills';
+import Skills from '@/app/_components/Section/Skills/Skills';
 import { Metadata, NextPage } from 'next';
 import Experience from '@/app/_components/Section/Experience/Experience';
 import Education from '@/app/_components/Section/Education/Education';

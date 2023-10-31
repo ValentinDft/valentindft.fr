@@ -1,7 +1,7 @@
 import FadeInIpAnimation from '@/utils/animation/FadeInUp/FadeInUp';
 import styles from './some-project.module.scss';
 import { dataProject } from '@/utils/data';
-import CardProject from '@/app/projects/_components/CardProject/CardProject';
+import CardProject from '@/components/CardProject/CardProject';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 
