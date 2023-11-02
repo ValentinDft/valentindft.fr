@@ -18,7 +18,7 @@ type propsCardProject = {
     skills: string[];
     description: string;
   };
-  delay: number;
+  delay?: number;
 };
 
 const CardProject = ({ data, delay }: propsCardProject) => {
