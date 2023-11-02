@@ -41,7 +41,10 @@ const Topbar = () => {
         >
           Projects
         </Link>
-        <Link href='#' className={styles['disabled']}>
+        <Link
+          href='/timelife'
+          className={slug === '/timelife' ? styles['active'] : ''}
+        >
           TimeLife
         </Link>
       </nav>

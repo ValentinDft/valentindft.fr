@@ -229,3 +229,77 @@ export const dataProject: typeDataProject = [
     highlight: false,
   },
 ];
+
+type typeDataTimelife = Array<{
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  category?: 'school' | 'job';
+}>;
+
+export const dataTimelife: typeDataTimelife = [
+  {
+    id: uuidv4(),
+    title: 'Birth',
+    date: '31 Jan. 1998',
+    description:
+      'I was born in Montpellier, a small town in the south of France.',
+  },
+  {
+    id: uuidv4(),
+    title: 'Bac Pro - ELEEC',
+    date: 'Sept. 2013 - Jun. 2016',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'school',
+  },
+  {
+    id: uuidv4(),
+    title: 'BTS SNIR',
+    date: 'Sept. 2017 - Jun. 2019',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'school',
+  },
+  {
+    id: uuidv4(),
+    title: 'Formation Développeur Web Fullstack JavaScript',
+    date: 'Sept. 2020 - Nov. 2020',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'school',
+  },
+  {
+    id: uuidv4(),
+    title: 'Formateur Assistant',
+    date: 'Jan. 2021 - Feb. 2021',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'job',
+  },
+  {
+    id: uuidv4(),
+    title: 'Développeur Front-end React.js - Stage',
+    date: 'Avr. 2021 - Jul. 2021',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'job',
+  },
+  {
+    id: uuidv4(),
+    title: "Titre Développeur d'application - JavaScript React (RNCP niveau 6)",
+    date: 'Fev. 2022 - Fev. 2024',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'school',
+  },
+  {
+    id: uuidv4(),
+    title: 'Développeur Front-end - Alternance',
+    date: 'Fev. 2022',
+    description:
+      'I studied at the Astier High School in Aubenas, where I obtained my baccalaureate in electronic engineering.',
+    category: 'job',
+  },
+];
