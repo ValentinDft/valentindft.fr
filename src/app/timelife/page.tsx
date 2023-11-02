@@ -2,6 +2,7 @@ import { Metadata, NextPage } from 'next';
 import styles from './page.module.scss';
 import CardTimelife from './_components/CardTimelife/CardTimelife';
 import { dataTimelife } from '@/utils/data';
+import PageTransition from '@/utils/animation/PageTransition/PageTransition';
 
 export const metadata: Metadata = {
   title: 'Valentin Duffet | TimeLife',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 const Timelife: NextPage = () => {
   return (
     <div className={styles['timeline']}>
+      <PageTransition />
       <div>
         {dataTimelife.map((data) => (
           <CardTimelife
