@@ -5,6 +5,8 @@ import { IconContext } from 'react-icons';
 import Link from 'next/link';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { TbBrandGithubFilled } from 'react-icons/tb';
+import { useEffect, useRef } from 'react';
+import { Variants, motion, useAnimation, useInView } from 'framer-motion';
 
 type propsCardProject = {
   data: {
@@ -16,11 +18,36 @@ type propsCardProject = {
     skills: string[];
     description: string;
   };
+  delay: number;
 };
 
-const CardProject = ({ data }: propsCardProject) => {
+const CardProject = ({ data, delay }: propsCardProject) => {
+  const ref = useRef(null);
+  const controls = useAnimation();
+  const isInView = useInView(ref);
+  const animationVariant: Variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    }
+  }, [isInView, controls]);
   return (
-    <div className={styles['card']}>
+    <motion.div
+      className={styles['card']}
+      variants={animationVariant}
+      initial='hidden'
+      animate={controls}
+      transition={{ duration: 0.5, ease: 'easeInOut', delay }}
+      ref={ref}
+    >
       <div className={styles['card-header']}>
         <Image
           src={`/assets/img/${data.image}`}
@@ -59,7 +86,7 @@ const CardProject = ({ data }: propsCardProject) => {
           <p>{data.description}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

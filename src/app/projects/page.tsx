@@ -10,14 +10,16 @@ export const metadata: Metadata = {
 };
 
 const Project: NextPage = () => {
+  let delay = 0.2;
   return (
     <div className={styles['container']}>
       <PageTransition />
 
       <div className={styles['container-list-project']}>
-        {dataProject.map((project) => (
-          <CardProject key={project.id} data={project} />
-        ))}
+        {dataProject.map((project) => {
+          delay = delay + 0.1;
+          return <CardProject key={project.id} data={project} delay={delay} />;
+        })}
       </div>
       <div className={styles['container-footer']}>
         <Link
