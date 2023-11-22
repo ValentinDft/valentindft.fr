@@ -7,6 +7,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const SomeProject = () => {
   const list = [...dataProject.filter((item) => item.highlight === true)];
+  let delay = 0.2;
 
   return (
     <FadeInIpAnimation>
@@ -16,9 +17,10 @@ const SomeProject = () => {
         </h2>
 
         <div className={styles['container-list']}>
-          {list.map((item) => (
-            <CardProject key={item.id} data={item} />
-          ))}
+          {list.map((item) => {
+            delay = delay + 0.2;
+            return <CardProject key={item.id} data={item} delay={delay} />;
+          })}
         </div>
         <div className={styles['container-action']}>
           <Link href='/projects'>
