@@ -140,11 +140,21 @@ type typeDataProject = Array<{
 export const dataProject: typeDataProject = [
   {
     id: uuidv4(),
+    image: 'screen-GC.png',
+    title: 'Grid Color',
+    githubLink: 'https://github.com/ValentinDft/grid-color',
+    externalLink: 'https://grid-color.vercel.app/',
+    skills: ['NextJS', 'TypeScript', 'Sass', 'Zustand'],
+    description: 'With Grid Color you can try your hand at pixel war.',
+    highlight: true,
+  },
+  {
+    id: uuidv4(),
     image: 'screen-CV.png',
     title: 'Colorz Vizualization',
     githubLink: 'https://github.com/ValentinDft/colorz-vizualization',
     externalLink: 'https://colorz-vizualization.vercel.app/',
-    skills: ['NextJS', 'TypeScript', 'Sass', 'Zustand'],
+    skills: ['NextJS', 'TypeScript', 'Sass', 'Zustand', 'zod'],
     description:
       'Colorz Vizialization gives you a preview of the colors you want to use in your web platform.',
     highlight: true,
@@ -169,7 +179,7 @@ export const dataProject: typeDataProject = [
     skills: ['ReactJS', 'JavaScript', 'Redux', 'ExpressJS', 'MovieDB API'],
     description:
       'Web App for collecting movies and series. Use of the MovieDB api to retrieve information on the most popular films and series currently available, and exploitation of the data received from the api.',
-    highlight: true,
+    highlight: false,
   },
   {
     id: uuidv4(),
