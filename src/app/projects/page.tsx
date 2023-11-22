@@ -1,7 +1,7 @@
 import { Metadata, NextPage } from 'next';
 import styles from './page.module.scss';
 import PageTransition from '@/utils/animation/PageTransition/PageTransition';
-import CardProject from '@/app/projects/_components/CardProject/CardProject';
+import CardProject from '@/components/CardProject/CardProject';
 import { dataProject } from '@/utils/data';
 import Link from 'next/link';
 
