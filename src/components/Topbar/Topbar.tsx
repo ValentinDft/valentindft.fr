@@ -15,9 +15,9 @@ const Topbar = () => {
             <>
               <div
                 className={styles['bullet']}
-                style={{ backgroundColor: '#00adb5' }}
+                style={{ backgroundColor: '#FF6800FF' }}
               ></div>
-              <p style={{ color: '#00adb5' }}>Open to work</p>
+              <p style={{ color: '#FF6800FF' }}>Not open to work</p>
             </>
           ) : (
             <>

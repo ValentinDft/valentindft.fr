@@ -40,7 +40,7 @@ const About = () => {
             <span className='title'>
               "Application developer - JavaScript React" certification with
               Openclassrooms.
-            </span>
+            </span> Since Dec. 2023 i work at Inovéa as a Front-end developer.
           </p>
           <div className={styles['container-img']}>
             <Image

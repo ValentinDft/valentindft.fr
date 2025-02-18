@@ -31,11 +31,9 @@ const Skills = () => {
             <Tooltip icon={<SiReact />} content='React.js' />
             <Tooltip icon={<TbBrandNextjs />} content='Next.js' />
             <Tooltip icon={<TbBrandAngular />} content='Angular' />
-            <Tooltip icon={<TbBrandRedux />} content='Redux' />
             <Tooltip icon={<TbBrandGit />} content='Git' />
             <Tooltip icon={<SiJest />} content='Jest' />
             <Tooltip icon={<LiaJira />} content='Jira' />
-            <Tooltip icon={<TbBrandFigma />} content='Figma' />
           </div>
         </IconContext.Provider>
       </div>

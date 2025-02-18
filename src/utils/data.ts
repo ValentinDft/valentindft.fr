@@ -13,6 +13,26 @@ type typeDataExperience = Array<{
 export const dataExperience: typeDataExperience = [
   {
     id: uuidv4(),
+    company: 'Inovéa',
+    date: 'Dec. 2023 - Now',
+    location: 'Montpellier, France',
+    title: 'Front-end developer',
+    skills: [
+      'Angular',
+      'TypeScript',
+      'Git',
+      'Jest',
+      'Jira',
+      'Scrum',
+    ],
+    description: [
+      'Develop new features and bug fixes for INOVÉA Business angular application.',
+      'Graphic redesign of an old application.',
+      'Creation and supply of an Angular internal component library.'
+    ],
+  },
+  {
+    id: uuidv4(),
     company: 'Rakuten DX',
     date: 'Feb. 2022 - Dec. 2023',
     location: 'Montpellier, France',
@@ -313,4 +333,12 @@ export const dataTimelife: typeDataTimelife = [
       'Related to the OpenClassrooms diploma. I work 2 years in Rakuten DX as a front-end developer on Angular and React.js.',
     category: 'job',
   },
+  {
+    id: uuidv4(),
+    title: 'Front-end developer',
+    date: 'Dec. 2023 - Now',
+    description:
+        'Following my Apprenticeship, I was recruited by Inovéa to join their IT team as an angular front-end developer.',
+    category: 'job',
+  }
 ];

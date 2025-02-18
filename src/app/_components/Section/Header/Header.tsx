@@ -18,7 +18,8 @@ const Header = () => {
           Montpellier, France <Reveal delay={0.4} />
         </h2>
         <p style={{ position: 'relative' }}>
-          I worked for 2 years at Rakuten DX as a front-end developer using
+          I've been working at Inovéa as an angular developer since 2023. <br/>
+          Before that i worked for 2 years at Rakuten DX as a front-end developer using
           React.js and Angular. <br></br>On a low-code/no-code platform for
           generating mobile applications.
           <Reveal delay={0.6} />

@@ -36,7 +36,7 @@ const CardProject = ({ data, delay }: propsCardProject) => {
 
   useEffect(() => {
     if (isInView) {
-      controls.start('visible');
+      controls.start('visible').then(r => r);
     }
   }, [isInView, controls]);
   return (

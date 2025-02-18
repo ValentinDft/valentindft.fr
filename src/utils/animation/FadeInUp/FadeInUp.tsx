@@ -12,10 +12,6 @@ const FadeInIpAnimation = (props: any) => {
   const ref = useRef(null);
   const controls = useAnimation();
   const isInView = useInView(ref);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ['0 5', '1 1'],
-  // });
 
   const animationVariant: Variants = {
     hidden: {
@@ -30,7 +26,7 @@ const FadeInIpAnimation = (props: any) => {
 
   useEffect(() => {
     if (isInView) {
-      controls.start('visible');
+      controls.start('visible').then(r => r);
     }
   }, [isInView, controls]);
 
