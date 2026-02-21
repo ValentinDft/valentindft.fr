@@ -1,59 +1,60 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Mon portfolio de developpeur web, construit avec Angular 21 et le rendu cote serveur (SSR).
 
-## Development server
+## Stack technique
 
-To start a local development server, run:
+- **Framework**: Angular 21 (standalone components)
+- **Rendu**: Server-Side Rendering (SSR) avec Express
+- **Styles**: SCSS
+- **Tests**: Vitest
+- **Linting**: ESLint + Prettier
+- **Icons**: Font Awesome
 
-```bash
-ng serve
-```
+## Pages
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Home** - Page d'accueil avec header, a propos et competences
+- **Projects** - Mes projets
+- **Timelife** - Mon parcours
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Installation
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
+## Developpement
 
-To build the project run:
+Lancer le serveur de developpement:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+L'application est disponible sur `http://localhost:4200/`.
 
-## Running unit tests
+## Build
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Build de production:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Servir le build SSR:
 
 ```bash
-ng e2e
+npm run serve:ssr:portfolio
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Tests et qualite
 
-## Additional Resources
+```bash
+npm test      # Tests unitaires (Vitest)
+npm run lint  # ESLint + templates Angular
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Git Hooks
+
+- **pre-commit**: lint automatique
+- **pre-push**: tests automatiques
