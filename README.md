@@ -6,14 +6,14 @@ Mon portfolio de developpeur web, construit avec Angular 21 et le rendu cote ser
 
 - **Framework**: Angular 21 (standalone components)
 - **Rendu**: Server-Side Rendering (SSR) avec Express
-- **Styles**: SCSS
+- **Styles**: SCSS (mobile-first, BEM)
 - **Tests**: Vitest
 - **Linting**: ESLint + Prettier
 - **Icons**: Font Awesome
 
 ## Pages
 
-- **Home** - Page d'accueil avec header, a propos et competences
+- **Home** - Page d'accueil avec header, a propos, competences et experiences
 - **Projects** - Mes projets
 - **Timelife** - Mon parcours
 
