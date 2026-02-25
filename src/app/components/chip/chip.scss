@@ -1,0 +1,13 @@
+@use 'style/colors' as colors;
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border: 1px solid colors.$color-secondary;
+  border-radius: 20px;
+  font-size: 12px;
+  color: colors.$color-secondary;
+  white-space: nowrap;
+}
