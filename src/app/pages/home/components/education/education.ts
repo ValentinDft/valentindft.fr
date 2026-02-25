@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CardExperience } from '../../../../components/card-experience/card-experience';
-import { EXPERIENCE_DATA } from './data/experience-data';
+import { EDUCATION_DATA } from './data/education-data';
 
 @Component({
-  selector: 'app-experience',
+  selector: 'app-education',
   imports: [CardExperience],
-  templateUrl: './experience.html',
-  styleUrl: './experience.scss',
+  templateUrl: './education.html',
+  styleUrl: './education.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Experience {
-  protected readonly experienceData = EXPERIENCE_DATA;
+export class Education {
+  protected readonly educationData = EDUCATION_DATA;
 }

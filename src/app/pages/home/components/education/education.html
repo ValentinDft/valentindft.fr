@@ -1,0 +1,6 @@
+<div class="education">
+  <h2 class="title-section-right">Education<span class="dot-title"></span></h2>
+  @for (item of educationData; track item.id) {
+    <app-card-experience [data]="item" />
+  }
+</div>

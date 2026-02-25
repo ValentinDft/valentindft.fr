@@ -1,9 +1,10 @@
-export interface ExperienceData {
+export interface CardData {
   id: string;
-  company: string;
+  organizationName: string;
   date: string;
   location: string;
   title: string;
   skills: string[];
   description: string[];
+  level?: string;
 }

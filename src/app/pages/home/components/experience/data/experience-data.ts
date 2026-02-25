@@ -1,7 +1,9 @@
-export const EXPERIENCE_DATA = [
+import { CardData } from '../../../../../interfaces/card-data.interface';
+
+export const EXPERIENCE_DATA: CardData[] = [
   {
     id: '1',
-    company: 'Inovea',
+    organizationName: 'Inovea',
     date: 'Dec. 2023 - Now',
     location: 'Montpellier, France',
     title: 'Front-end developer',
@@ -15,7 +17,7 @@ export const EXPERIENCE_DATA = [
   },
   {
     id: '2',
-    company: 'Rakuten DX',
+    organizationName: 'Rakuten DX',
     date: 'Feb. 2022 - Dec. 2023',
     location: 'Montpellier, France',
     title: 'Front-end developer - Apprenticeship',
@@ -29,7 +31,7 @@ export const EXPERIENCE_DATA = [
   },
   {
     id: '3',
-    company: 'Butterfly&Co',
+    organizationName: 'Butterfly&Co',
     date: 'Apr. 2021 - Jul. 2021',
     location: 'Full-remote',
     title: 'Front-end developer - Intership',
@@ -42,7 +44,7 @@ export const EXPERIENCE_DATA = [
   },
   {
     id: '4',
-    company: 'La Capsule Academy',
+    organizationName: 'La Capsule Academy',
     date: 'Jan. 2021 - Feb. 2021',
     location: 'Lyon, France',
     title: 'Teacher assistant',

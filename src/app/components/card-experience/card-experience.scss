@@ -1,5 +1,5 @@
-@use 'style/colors' as colors;
-@use 'style/breakpoints' as breakpoints;
+@use '../../../style/colors' as colors;
+@use '../../../style/breakpoints' as breakpoints;
 
 .card {
   width: 100%;
