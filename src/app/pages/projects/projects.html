@@ -1,1 +1,5 @@
-<p>projects works!</p>
+<div class="projects">
+  @for (project of projectsData; track project.id) {
+    <app-card-project [projectData]="project"/>
+  }
+</div>

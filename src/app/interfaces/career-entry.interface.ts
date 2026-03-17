@@ -1,4 +1,4 @@
-export interface CardData {
+export interface CareerEntry {
   id: string;
   organizationName: string;
   date: string;

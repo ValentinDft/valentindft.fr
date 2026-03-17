@@ -1,6 +1,6 @@
-import { CardData } from '../../../../../interfaces/card-data.interface';
+import { CareerEntry } from '../interfaces/career-entry.interface';
 
-export const EDUCATION_DATA: CardData[] = [
+export const EDUCATIONS_DATA: CareerEntry[] = [
   {
     id: '1',
     title: 'Application Developer - JavaScript React (RNCP level 6)',

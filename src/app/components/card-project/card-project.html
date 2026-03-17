@@ -1,0 +1,36 @@
+<div class="card-project">
+  <div class="card-project__header">
+    <img [ngSrc]="'/assets/img/' + projectData()?.image" alt="project" fill>
+    <div class="card-project__header__overlay">
+      <div class="card-project__header__overlay__links">
+        <a
+          class="card-project__header__overlay__link"
+          [href]="projectData()?.githubLink"
+          target="_blank"
+          aria-label="GitHub repository"
+        >
+          <fa-icon [icon]="faGithub" size="lg" title="Github"></fa-icon>
+        </a>
+        @if (projectData()?.externalLink) {
+          <a
+            class="card-project__header__overlay__link"
+            [href]="projectData()?.externalLink"
+            target="_blank"
+            aria-label="View live project"
+          >
+            <fa-icon [icon]="faArrowUpRightFromSquare" size="lg" title="External"></fa-icon>
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="card-project__body">
+    <h3 class="card-project__body__title">{{ projectData()?.title }}</h3>
+    <p class="card-project__body__description">{{ projectData()?.description }}</p>
+    <div class="card-project__body__skills">
+      @for (skill of projectData()?.skills; track $index) {
+        <app-chip [label]="skill" />
+      }
+    </div>
+  </div>
+</div>

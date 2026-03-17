@@ -51,9 +51,11 @@
       width: 50%;
 
       a {
-        transition: transform .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
         &:hover {
           transform: scale(1.1);
+          color: colors.$color-primary;
         }
       }
     }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Chip } from '../chip/chip';
-import { CardData } from '../../interfaces/card-data.interface';
+import { CareerEntry } from '../../interfaces/career-entry.interface';
 
 @Component({
   selector: 'app-card-experience',
@@ -10,5 +10,5 @@ import { CardData } from '../../interfaces/card-data.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardExperience {
-  data = input.required<CardData>();
+  data = input.required<CareerEntry>();
 }

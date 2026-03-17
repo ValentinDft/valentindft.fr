@@ -1,6 +1,6 @@
-import { CardData } from '../../../../../interfaces/card-data.interface';
+import { CareerEntry } from '../interfaces/career-entry.interface';
 
-export const EXPERIENCE_DATA: CardData[] = [
+export const EXPERIENCES_DATA: CareerEntry[] = [
   {
     id: '1',
     organizationName: 'Inovea',

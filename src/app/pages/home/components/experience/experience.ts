@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CardExperience } from '../../../../components/card-experience/card-experience';
-import { EXPERIENCE_DATA } from './data/experience-data';
+import { EXPERIENCES_DATA } from '../../../../datas/experiences-data';
 
 @Component({
   selector: 'app-experience',
@@ -10,5 +10,5 @@ import { EXPERIENCE_DATA } from './data/experience-data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Experience {
-  protected readonly experienceData = EXPERIENCE_DATA;
+  protected readonly experienceData = EXPERIENCES_DATA;
 }
