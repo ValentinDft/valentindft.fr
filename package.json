@@ -9,7 +9,8 @@
     "test": "ng test --watch=false",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
     "lint": "ng lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "ng build && npx angular-cli-ghpages --dir=dist/portfolio/browser"
   },
   "private": true,
   "packageManager": "npm@11.7.0",
@@ -36,6 +37,7 @@
     "@angular/compiler-cli": "^21.0.0",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^3.0.2",
     "angular-eslint": "21.1.0",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
