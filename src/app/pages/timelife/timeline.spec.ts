@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Timelife } from './timelife';
+import { Timeline } from './timeline';
 
 describe('Timelife', () => {
-  let component: Timelife;
-  let fixture: ComponentFixture<Timelife>;
+  let component: Timeline;
+  let fixture: ComponentFixture<Timeline>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Timelife]
+      imports: [Timeline]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Timelife);
+    fixture = TestBed.createComponent(Timeline);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,0 +1,118 @@
+@use 'style/colors' as colors;
+@use 'style/breakpoints' as breakpoints;
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 32px 50px;
+
+  &__dot {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: colors.$color-primary;
+    border: 2px solid colors.$background-color;
+    box-shadow: 0 0 0 2px colors.$color-primary;
+    z-index: 1;
+
+    &--pulse {
+      background-color: colors.$green;
+      border-color: colors.$background-color;
+      box-shadow: 0 0 0 2px colors.$green;
+      animation: pulse 2s ease-in-out infinite;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: colors.$background-color-with-opacity;
+    border-radius: 10px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &__date {
+        font-size: 12px;
+        font-style: italic;
+        color: colors.$text-color-with-opacity;
+        margin-left: auto;
+      }
+    }
+
+    &__title {
+      font-size: 15px;
+      font-weight: 600;
+      color: colors.$text-color;
+    }
+
+    &__description {
+      font-size: 13px;
+      color: colors.$text-color-with-opacity;
+    }
+  }
+
+
+
+  @include breakpoints.responsive-min-width(breakpoints.$l) {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 40px 48px 0;
+
+    &__dot {
+      top: 24px;
+      left: auto;
+      right: -8px;
+    }
+
+    &__card {
+      padding: 20px 24px;
+
+      &__header {
+        &__date {
+          font-size: 13px;
+        }
+      }
+
+      &__title {
+        font-size: 17px;
+      }
+
+      &__description {
+        font-size: 14px;
+      }
+    }
+
+    &--even {
+      margin-left: 50%;
+      padding: 0 0 48px 40px;
+
+      .timeline-item__dot {
+        left: -8px;
+        right: auto;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 2px colors.$green, 0 0 0 5px rgba(colors.$green, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 2px colors.$green, 0 0 0 10px rgba(colors.$green, 0);
+  }
+}

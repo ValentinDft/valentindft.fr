@@ -15,7 +15,7 @@ Mon portfolio de developpeur web, construit avec Angular 21 et le rendu cote ser
 
 - **Home** - Page d'accueil avec header, a propos, competences et experiences
 - **Projects** - Mes projets
-- **Timelife** - Mon parcours
+- **Timeline** - Mon parcours
 
 ## Installation
 

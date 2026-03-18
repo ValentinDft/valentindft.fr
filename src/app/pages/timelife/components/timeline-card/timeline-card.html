@@ -1,0 +1,25 @@
+<div
+  class="timeline-item"
+  [class.timeline-item--even]="isEven()"
+  [class.timeline-item--current]="isLast()"
+>
+  <span class="timeline-item__dot" [class.timeline-item__dot--pulse]="isLast()"></span>
+
+  <div class="timeline-item__card">
+    <div class="timeline-item__card__header">
+      @if (timelineData()?.category) {
+        <app-chip
+          [label]="timelineData()?.category === 'school' ? 'Education' : 'Work'"
+          [color]="timelineData()?.category === 'school' ? '#75cac3' : '#ffd275'"
+        />
+      }
+      @if (isLast()) {
+        <app-chip label="Current" color="#02d39b" />
+      }
+      <span class="timeline-item__card__header__date">{{ timelineData()?.date }}</span>
+    </div>
+
+    <h3 class="timeline-item__card__title">{{ timelineData()?.title }}</h3>
+    <p class="timeline-item__card__description">{{ timelineData()?.description }}</p>
+  </div>
+</div>

@@ -8,4 +8,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class Chip {
   label = input.required<string>();
+  color = input<string>();
 }

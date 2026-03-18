@@ -1,13 +1,15 @@
 @use 'style/colors' as colors;
 
 .chip {
+  --chip-color: #{colors.$color-secondary};
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
-  border: 1px solid colors.$color-secondary;
+  border: 1px solid var(--chip-color);
   border-radius: 20px;
   font-size: 12px;
-  color: colors.$color-secondary;
+  color: var(--chip-color);
+  background-color: color-mix(in srgb, var(--chip-color) 15%, transparent);
   white-space: nowrap;
 }

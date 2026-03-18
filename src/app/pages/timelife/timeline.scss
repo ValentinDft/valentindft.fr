@@ -1,0 +1,33 @@
+@use 'style/colors' as colors;
+@use 'style/breakpoints' as breakpoints;
+
+.timeline {
+  margin-top: 50px;
+
+  &__list {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        colors.$color-primary 5%,
+        colors.$color-secondary 95%,
+        transparent
+      );
+    }
+
+    @include breakpoints.responsive-min-width(breakpoints.$l) {
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

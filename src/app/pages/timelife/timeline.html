@@ -1,0 +1,7 @@
+<div class="timeline">
+  <div class="timeline__list">
+    @for (item of timelifeData; track item.id; let last = $last; let idx = $index) {
+      <app-timeline-card [timelineData]="item" [isLast]="last" [isEven]="idx % 2 === 0" />
+    }
+  </div>
+</div>

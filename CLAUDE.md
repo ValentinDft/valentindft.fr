@@ -20,7 +20,7 @@ Angular 21 portfolio with SSR (Server-Side Rendering). Uses standalone component
 - `src/server.ts` - Express SSR server
 
 **Structure:**
-- `src/app/pages/` - Route pages (Home, Projects, Timelife)
+- `src/app/pages/` - Route pages (Home, Projects, Timeline)
 - `src/app/components/` - Shared components (Topbar, Footer)
 - `src/app/pages/home/components/` - Home page sections (Header, About, Skills, Experience)
 - `src/style/` - Global SCSS partials (_colors, _breakpoints, _fonts)
