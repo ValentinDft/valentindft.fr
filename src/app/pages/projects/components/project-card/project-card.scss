@@ -1,7 +1,7 @@
-@use 'style/colors' as colors;
-@use 'style/breakpoints' as breakpoints;
+@use '../../../../../style/colors' as colors;
+@use '../../../../../style/breakpoints' as breakpoints;
 
-.card-project {
+.project-card {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -14,7 +14,7 @@
     border-color: colors.$color-secondary;
     transform: translateY(-4px);
 
-    .card-project__header {
+    .project-card__header {
       img {
         transform: scale(1.06);
       }
@@ -118,7 +118,7 @@
 }
 
 @include breakpoints.responsive-min-width(breakpoints.$l) {
-  .card-project {
+  .project-card {
     &__body {
       &__title {
         font-size: 20px;

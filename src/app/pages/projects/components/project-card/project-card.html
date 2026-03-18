@@ -1,10 +1,10 @@
-<div class="card-project">
-  <div class="card-project__header">
+<div class="project-card">
+  <div class="project-card__header">
     <img [ngSrc]="'/assets/img/' + projectData()?.image" alt="project" fill>
-    <div class="card-project__header__overlay">
-      <div class="card-project__header__overlay__links">
+    <div class="project-card__header__overlay">
+      <div class="project-card__header__overlay__links">
         <a
-          class="card-project__header__overlay__link"
+          class="project-card__header__overlay__link"
           [href]="projectData()?.githubLink"
           target="_blank"
           aria-label="GitHub repository"
@@ -13,7 +13,7 @@
         </a>
         @if (projectData()?.externalLink) {
           <a
-            class="card-project__header__overlay__link"
+            class="project-card__header__overlay__link"
             [href]="projectData()?.externalLink"
             target="_blank"
             aria-label="View live project"
@@ -24,10 +24,10 @@
       </div>
     </div>
   </div>
-  <div class="card-project__body">
-    <h3 class="card-project__body__title">{{ projectData()?.title }}</h3>
-    <p class="card-project__body__description">{{ projectData()?.description }}</p>
-    <div class="card-project__body__skills">
+  <div class="project-card__body">
+    <h3 class="project-card__body__title">{{ projectData()?.title }}</h3>
+    <p class="project-card__body__description">{{ projectData()?.description }}</p>
+    <div class="project-card__body__skills">
       @for (skill of projectData()?.skills; track $index) {
         <app-chip [label]="skill" />
       }

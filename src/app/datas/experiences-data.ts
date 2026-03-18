@@ -26,7 +26,7 @@ export const EXPERIENCES_DATA: CareerEntry[] = [
       'Creation of a tag plan and implementation of analytics events on the front-end part (Angular, Rakuten Analytics).',
       'Developer (Angular and React) on the front-end of a platform for developing low-code/no-code mobile applications. Bug resolution and implementation of new features.',
       "Collaborate with the UX/UI team to improve the product's user experience and accessibility.",
-      'International collaboration with Japanese and Indians. Agile practices with Scrum.',
+      'International collaboration with Japanese and Indian colleagues. Agile practices with Scrum.',
     ],
   },
   {
@@ -34,7 +34,7 @@ export const EXPERIENCES_DATA: CareerEntry[] = [
     organizationName: 'Butterfly&Co',
     date: 'Apr. 2021 - Jul. 2021',
     location: 'Full-remote',
-    title: 'Front-end developer - Intership',
+    title: 'Front-end developer - Internship',
     skills: ['React.js', 'Firebase', 'Styled-component'],
     description: [
       'Creation of a platform providing company coaches with tools for running interactive workshops.',

@@ -2,7 +2,7 @@
 @use 'style/breakpoints' as breakpoints;
 
 .timeline {
-  margin-top: 50px;
+  margin: 50px 0;
 
   &__list {
     position: relative;
