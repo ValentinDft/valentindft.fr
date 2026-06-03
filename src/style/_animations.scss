@@ -1,0 +1,17 @@
+@keyframes reveal-block {
+  from { transform: scaleX(1); }
+  to { transform: scaleX(0); }
+}
+
+@mixin reveal-block($color, $delay: 0ms, $duration: 700ms) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $color;
+    transform-origin: right;
+    animation: reveal-block $duration $delay cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+}
