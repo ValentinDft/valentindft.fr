@@ -1,5 +1,11 @@
 <div class="projects">
-  @for (project of projectsData; track project.id) {
-    <app-project-card [projectData]="project"/>
-  }
+  <div class="projects__container">
+    @for (project of projectsData; track project.id) {
+      <app-project-card [projectData]="project"/>
+    }
+  </div>
+
+  <a href="https://github.com/ValentinDft" target="_blank" class="projects__link">
+    <p>Check out lots of other projects on my GitHub</p>
+  </a>
 </div>
